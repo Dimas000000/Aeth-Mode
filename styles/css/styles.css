@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    color: white;
+}
+#pageTitle{
+    box-shadow: -0.3vw 0 rgba(0, 0, 255, 0.7), 0.3vw 0 rgba(255, 0, 0, 0.7);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.menuBar:hover{
+    box-shadow: -0.3vw 0 rgba(0, 0, 255, 0.7), 0.3vw 0 rgba(255, 0, 0, 0.7);
+}
+
+/* ---------- Media Queries ---------- */
+
+/* ----- PC ----- */
+@media only screen and (min-width: 1000px)
+{
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ----- Header ----- */
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 4vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    #title{
+        font-size: 4vw;
+    }
+    #pageTitle{
+        font-size: 2vw;
+        padding: 0.5vw;
+        border-radius: 5vw;
+    }
+    nav{
+        width: 100vw;
+        height: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 0;
+        transition: font-size 0.3s ease, padding-top 1s ease, padding-bottom 1s ease;
+    }
+    nav:hover{
+        font-size: 1.5vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    #navItems{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #navBr{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        font-size: 1vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+    }
+    hr{
+        width: 40vw;
+    }
+    .menuBar{
+        border-radius: 5vw;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, padding 0.5s ease;
+    }
+    .menuBar:hover{
+        transform: scale(1.2);
+        padding: 0.5vw;
+    }
+
+    /* ----- Main ----- */
+    main{
+        height: 80vh;
+    }
+
+    /* ----- Footer ----- */
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 4vw;
+        width: 100vw;
+    }
+}

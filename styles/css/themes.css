@@ -1,0 +1,32 @@
+/* ----- Claro ----- */
+.cor-tema-claro{
+    background-color: white;
+}
+.cor-text-claro{
+    color: black;
+}
+.cor-prim-claro{
+    background-color: rgb(117, 24, 204);
+}
+.cor-sec-claro{
+    background-color: rgb(141, 53, 226);
+}
+.cor-ter-claro{
+    background-color: rgb(184, 107, 255);
+}
+/* ----- Escuro ----- */
+.cor-tema-escuro{
+    background-color: rgb(30, 30, 30);
+}
+.cor-text-escuro{
+    color: white;
+}
+.cor-prim-escuro{
+    background-color: black;
+}
+.cor-sec-escuro{
+    background-color: rgb(117, 24, 204);
+}
+.cor-ter-escuro{
+    background-color: rgb(40, 40, 40);
+}

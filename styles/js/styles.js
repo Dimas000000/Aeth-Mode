@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $('nav').hover(
+        function()
+        {
+            $('#navBr').hide(200);
+        },
+        function()
+        {
+            $('#navBr').show(200);
+        }
+    );
+});
