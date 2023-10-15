@@ -14,8 +14,15 @@
 .cor-ter-claro{
     background-color: rgb(184, 107, 255);
 }
-.cor-shadow-claro{
-    box-shadow: inset 0vw 0vw 1vw rgb(184, 107, 255);
+@media only screen and (min-width: 650px){
+    .cor-shadow-claro{
+        box-shadow: inset 0vw 0vw 10vw 1vw rgb(184, 107, 255);
+    }
+}
+@media only screen and (max-width: 650px){
+    .cor-shadow-claro{
+        box-shadow: inset 0vw 0vw 100vw -4vw rgb(184, 107, 255);
+    }
 }
 /* ----- Escuro ----- */
 .cor-tema-escuro{
@@ -33,6 +40,13 @@
 .cor-ter-escuro{
     background-color: rgb(40, 40, 40);
 }
-.cor-shadow-escuro{
-    box-shadow: inset 0vw 0vw 10vw rgb(13, 13, 13);
+@media only screen and (min-width: 650px){
+    .cor-shadow-escuro{
+        box-shadow: inset 0vw 0vw 100vw 1vw black;
+    }
+}
+@media only screen and (max-width: 650px){
+    .cor-shadow-escuro{
+        box-shadow: inset 0vw 0vw 40vw black;
+    }
 }
