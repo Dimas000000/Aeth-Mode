@@ -58,6 +58,7 @@ $(document).ready(function()
                 $('.cor-prim').addClass('cor-prim-claro');
                 $('.cor-sec').addClass('cor-sec-claro');
                 $('.cor-ter').addClass('cor-ter-claro');
+                $('.cor-shadow').addClass('cor-shadow-claro');
             break;
             case "dark":
                 RemoveTheme("light");
@@ -67,6 +68,7 @@ $(document).ready(function()
                 $('.cor-prim').addClass('cor-prim-escuro');
                 $('.cor-sec').addClass('cor-sec-escuro');
                 $('.cor-ter').addClass('cor-ter-escuro');
+                $('.cor-shadow').addClass('cor-shadow-escuro');
             break;
         }
     }
@@ -80,6 +82,7 @@ $(document).ready(function()
                 $('.cor-prim').removeClass('cor-prim-claro');
                 $('.cor-sec').removeClass('cor-sec-claro');
                 $('.cor-ter').removeClass('cor-ter-claro');
+                $('.cor-shadow').removeClass('cor-shadow-claro');
             break;
             case "dark":
                 $('.cor-tema').removeClass('cor-tema-escuro');
@@ -87,6 +90,7 @@ $(document).ready(function()
                 $('.cor-prim').removeClass('cor-prim-escuro');
                 $('.cor-sec').removeClass('cor-sec-escuro');
                 $('.cor-ter').removeClass('cor-ter-escuro');
+                $('.cor-shadow').removeClass('cor-shadow-escuro');
             break;
         }
     }

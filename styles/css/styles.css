@@ -8,16 +8,18 @@
 }
 body{
     color: white;
+
+/* ----- Header ----- */
 }
 #pageTitle{
-    box-shadow: -0.3vw 0 rgba(0, 0, 255, 0.7), 0.3vw 0 rgba(255, 0, 0, 0.7);
+    box-shadow: -0.2vw 0.2vw blue, 0.2vw -0.2vw red;
 }
 a{
     text-decoration: none;
     color: white;
 }
-.menuBar:hover{
-    box-shadow: -0.3vw 0 rgba(0, 0, 255, 0.7), 0.3vw 0 rgba(255, 0, 0, 0.7);
+.menuItem:hover{
+    box-shadow: -0.2vw 0.2vw blue, 0.2vw -0.2vw red;
 }
 
 /* ---------- Media Queries ---------- */
@@ -36,6 +38,8 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        top: 0;
         width: 100vw;
         height: 4vw;
         padding-top: 2vw;
@@ -52,17 +56,24 @@ a{
     nav{
         width: 100vw;
         height: 5vw;
+        position: absolute;
+        top: 8vw;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         font-size: 0;
-        transition: font-size 0.3s ease, padding-top 1s ease, padding-bottom 1s ease;
+        transition: all 0.3s ease, padding 0.7s ease, top 0s ease;
     }
     nav:hover{
         font-size: 1.5vw;
         padding-top: 1vw;
         padding-bottom: 1vw;
+    }
+    .navFixed{
+        position: fixed;
+        top: 0;
+        z-index: 100;
     }
     #navItems{
         width: 100vw;
@@ -82,18 +93,63 @@ a{
     hr{
         width: 40vw;
     }
-    .menuBar{
+    .menuItem{
         border-radius: 5vw;
         transition: transform 0.3s ease, box-shadow 0.3s ease, padding 0.5s ease;
     }
-    .menuBar:hover{
+    .menuItem:hover{
         transform: scale(1.2);
         padding: 0.5vw;
     }
 
     /* ----- Main ----- */
     main{
-        height: 80vh;
+        width: 100vw;
+        margin-top: 13vw;
+        background-image: url("../../files/images/background.png");
+        background-repeat: repeat;
+        background-size: 20vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1vw;
+    }
+    section{
+        margin-top: 0.5vw;
+        border-radius: 2vw;
+        padding: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+    }
+    section h1{
+        font-size: 2vw;
+    }
+    .selectContainer{
+        margin-top: 1vw;
+        padding: 2vw;
+        border-radius: 1vw;
+        width: 75vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .selectContainer img{
+        width: 10vw;
+        border-radius: 0.5vw;
+        transition: all 0.5s ease;
+    }
+    section:hover img{
+        transform: scale(1.4) rotate(360deg);
+        border-radius: 0.7vw;
+    }
+    .description{
+        width: 75vw;
+        text-align: justify;
+        font-size: 1.3vw;
+        padding: 2vw;
+        border-radius: 1vw;
+        margin-top: 1vw;
     }
 
     /* ----- Footer ----- */
