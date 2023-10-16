@@ -30,7 +30,7 @@ $(document).ready(function(){
         },
         function()
         {
-            $('#videos-html .description').hide(500);
+            $('#videos-html .description').hide(200);
         }
     );
     $('#videos-css').hover(
@@ -40,7 +40,7 @@ $(document).ready(function(){
         },
         function()
         {
-            $('#videos-css .description').hide(500);
+            $('#videos-css .description').hide(200);
         }
     );
     $('#videos-js').hover(
@@ -50,7 +50,7 @@ $(document).ready(function(){
         },
         function()
         {
-            $('#videos-js .description').hide(500);
+            $('#videos-js .description').hide(200);
         }
     );
 
@@ -65,7 +65,7 @@ $(document).ready(function(){
             },
             function()
             {
-                $('#videos-html .sectionContainer .bannerContainer').hide(500);
+                $('#videos-html .sectionContainer .bannerContainer').hide(200);
             }
         );
         $('#videos-css').hover(
@@ -75,7 +75,7 @@ $(document).ready(function(){
             },
             function()
             {
-                $('#videos-css .sectionContainer .bannerContainer').hide(500);
+                $('#videos-css .sectionContainer .bannerContainer').hide(200);
             }
         );
         $('#videos-js').hover(

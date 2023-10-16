@@ -27,8 +27,8 @@ main{
     background-repeat: repeat;
     background-size: 20vw;
 }
-.bannerContainer{
-    background-color: rgba(0, 0, 0, 0.30);
+.banner{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* ---------- Media Queries ---------- */
@@ -151,9 +151,12 @@ main{
         border-radius: 0.7vw;
     }
     .bannerContainer{
-        width: 60vw;
-        height: 10vw;
-        border-radius: 0.5vw;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .banner{
+        width: 50vw;
     }
     .description{
         width: 75vw;
@@ -290,13 +293,8 @@ main{
         width: 0vw;
         border-radius: 5vw;
     }
-    .bannerContainer{
-        width: 80vw;
-        height: 45vw;
-        border-radius: 5vw;
-    }
-    .videosContent{
-        width: 80vw;
+    .banner{
+        width: 0;
     }
     .description{
         width: 80vw;
