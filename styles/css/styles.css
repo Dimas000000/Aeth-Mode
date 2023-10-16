@@ -22,11 +22,6 @@ a{
     box-shadow: -0.2vw 0.2vw blue, 0.2vw -0.2vw red;
 }
 /* ----- Main ----- */
-main{
-    background-image: url("../../files/images/background.png");
-    background-repeat: repeat;
-    background-size: 20vw;
-}
 .banner{
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -262,7 +257,6 @@ main{
         flex-direction: column;
         align-items: center;
         padding-bottom: 6vw;
-        background-size: 50vw;
     }
     section{
         margin-top: 6vw;
@@ -283,18 +277,24 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: all 0.5s ease;
     }
     .sectionContainer .logo{
         width: 50vw;
         border-radius: 4vw;
         transition: all 0.5s ease;
     }
-    section:hover .sectionContainer .logo{
-        width: 0vw;
-        border-radius: 5vw;
+    .bannerMobileHTML{
+        width: 80vw;
+        height: 45vw;
     }
-    .banner{
-        width: 0;
+    .bannerMobileCSS{
+        width: 80vw;
+        height: 45vw;
+    }
+    .bannerMobileJS{
+        width: 80vw;
+        height: 45vw;
     }
     .description{
         width: 80vw;

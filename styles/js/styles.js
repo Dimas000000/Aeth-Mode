@@ -26,7 +26,7 @@ $(document).ready(function(){
     $('#videos-html').hover(
         function()
         {
-            $('#videos-html .description').show(500);
+            $('#videos-html .description').show(300);
         },
         function()
         {
@@ -36,7 +36,7 @@ $(document).ready(function(){
     $('#videos-css').hover(
         function()
         {
-            $('#videos-css .description').show(500);
+            $('#videos-css .description').show(300);
         },
         function()
         {
@@ -46,7 +46,7 @@ $(document).ready(function(){
     $('#videos-js').hover(
         function()
         {
-            $('#videos-js .description').show(500);
+            $('#videos-js .description').show(300);
         },
         function()
         {
@@ -57,35 +57,37 @@ $(document).ready(function(){
     /* ----- Mobile ----- */
     if($(window).width() < 650)
     {
-        $('.bannerContainer').hide(0);
+        $('.banner').hide(0);
+        $('.bannerMobile').hide(0);
+
         $('#videos-html').hover(
             function()
             {
-                $('#videos-html .sectionContainer .bannerContainer').show(500);
+                $('.bannerMobile').show(200);
             },
             function()
             {
-                $('#videos-html .sectionContainer .bannerContainer').hide(200);
+                $('.bannerMobile').hide(200);
             }
         );
         $('#videos-css').hover(
             function()
             {
-                $('#videos-css .sectionContainer .bannerContainer').show(500);
+                $('.bannerMobile').show(200);
             },
             function()
             {
-                $('#videos-css .sectionContainer .bannerContainer').hide(200);
+                $('.bannerMobile').hide(200);
             }
         );
         $('#videos-js').hover(
             function()
             {
-                $('#videos-js .sectionContainer .bannerContainer').show(500);
+                $('.bannerMobile').show(200);
             },
             function()
             {
-                $('#videos-js .sectionContainer .bannerContainer').hide(500);
+                $('.bannerMobile').hide(200);                
             }
         );
     }
