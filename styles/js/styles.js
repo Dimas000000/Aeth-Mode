@@ -57,45 +57,36 @@ $(document).ready(function(){
     /* ----- Mobile ----- */
     if($(window).width() < 650)
     {
-        $('.banner').hide(0);
-        $('.bannerMobileHTML').hide(0);
-        $('.bannerMobileCSS').hide(0);
-        $('.bannerMobileJS').hide(0);
+        $('.bannerMobile').hide(0);
 
         $('#videos-html').hover(
             function()
             {
-                $('.bannerMobileHTML').show(200);
-                $('#bannerHTML').show(200);
+                $('#videos-html .bannerMobile').show(200);
             },
             function()
             {
-                $('.bannerMobileHTML').hide(200);
-                $('#bannerHTML').hide(200);
+                $('#videos-html .bannerMobile').hide(200);
             }
         );
         $('#videos-css').hover(
             function()
             {
-                $('.bannerMobileCSS').show(200);
-                $('#bannerHTML').show(200);
+                $('#videos-css .bannerMobile').show(200);
             },
             function()
             {
-                $('.bannerMobileCSS').hide(200);
-                $('#bannerHTML').hide(200);
+                $('#videos-css .bannerMobile').hide(200);
             }
         );
         $('#videos-js').hover(
             function()
             {
-                $('.bannerMobileJS').show(200);
-                $('#bannerHTML').show(200);
+                $('#videos-js .bannerMobile').show(200);
             },
             function()
             {
-                $('.bannerMobileJS').hide(200);
-                $('#bannerHTML').hide(200);
+                $('#videos-js .bannerMobile').hide(200);
             }
         );
     }
